@@ -1,0 +1,5 @@
+1. Типы данных (byte, short, char, int, long, float, double, boolean, String)
+2. Операторы в джава. +, -, /, *, %, >, <, !=, >>, <<, x++/ ++x, x--/ --x, оператор+=, приоритет операций
+3. Приведение типов
+4. Что такое git. Git commit, fetch+merge, pull, push, git stash, git pop
+5. Форматирование кода
