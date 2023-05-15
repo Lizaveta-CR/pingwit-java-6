@@ -1,0 +1,4 @@
+1. if-else, if-else-if
+2. Ternary (Elvis)
+3. Switch / Switch Java 17
+4. Цикл for
