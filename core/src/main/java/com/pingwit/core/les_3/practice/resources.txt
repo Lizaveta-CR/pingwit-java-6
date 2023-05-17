@@ -1,0 +1,7 @@
+1. If-else: https://javarush.com/groups/posts/logicheskie-operacii-v-java, https://www.youtube.com/watch?v=-VeUElwL27I
+2. Switch: https://metanit.com/java/tutorial/2.5.php
+3. For-loop: https://techvidvan.com/tutorials/java-for-loop/
+
+Обзательно:
+Структура проекта, пакетов - https://www.youtube.com/watch?v=7WhscXC9aP8
+(но названия проекта с маленькой буквы, в видео с большой)
