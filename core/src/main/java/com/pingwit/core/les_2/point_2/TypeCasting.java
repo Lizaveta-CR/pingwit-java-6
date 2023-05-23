@@ -30,7 +30,8 @@ public class TypeCasting {
         double d = c;
 
         String myString = "Hello, someone!";
-        Byte carSpeed = 25;
+        Byte carSpeed = 100;//autoboxing
+        //byte byteVal = carSpeed.byteValue(); - unboxing
         String carSpeedStr = carSpeed.toString();
         System.out.println(carSpeedStr);
         byte byteVal = carSpeed.byteValue();
