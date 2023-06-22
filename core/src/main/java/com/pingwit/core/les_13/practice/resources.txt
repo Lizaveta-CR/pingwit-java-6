@@ -1,0 +1,5 @@
+0. Что такое ООП и его принципы - https://javarush.com/groups/posts/principy-oop
+1. Отличие перегрузки метода от переопределения
+   https://www.turbopro.ru/index.php/yazyk-programmirovaniya-java/7705-25-peregruzka-i-pereopredelenie-metodov
+2. «статическое vs динамическое связывание (или раннее и позднее)в Java»
+   https://javarush.ru/groups/posts/439-razlichija-mezhdu-rannim-i-pozdnim-svjazihvaniem-v-java
