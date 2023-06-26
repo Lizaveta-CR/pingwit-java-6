@@ -1,0 +1,1 @@
+1. Стандартные аннотации в Java 8 https://docs.oracle.com/javase/tutorial/java/annotations/predefined.html
