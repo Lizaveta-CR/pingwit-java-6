@@ -1,0 +1,9 @@
+1. Потоки ввода-вывода
+2. Чтение и запись файлов. FileInputStream и FileOutputStream
+3. Закрытие потоков
+4. Путь к файлу хард кодом (/ в начале пути указывает на абсолютный путь, а не относительный)
+5. Классы ByteArrayInputStream и ByteArrayOutputStream
+6. Буферизованные потоки BufferedInputStream и BufferedOutputStream
+7. Классы DataOutputStream и DataInputStream
+8. Чтение и запись текстовых файлов (FileReader, FileWriter)
+9. Буферизация символьных потоков. BufferedReader и BufferedWriter
