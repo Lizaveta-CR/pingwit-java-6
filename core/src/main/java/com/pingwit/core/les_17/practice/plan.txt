@@ -1,0 +1,4 @@
+1. Сериализация (ObjectInputStream, ObjectOutputStream, transient)
+2. Класс File. Работа с файлами и каталогами. Files.readString(), Files.writeString()
+3. Работа с ZIP-архивами
+4. Apache POI - чтение из Word документа
