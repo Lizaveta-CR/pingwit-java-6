@@ -1,6 +1,5 @@
 package com.pingwit.core.les_18.classwork.point_2;
 
-import com.pingwit.core.les_18.classwork.point_1.Box;
 import java.util.Arrays;
 
 public class GenericWarehouse<T> {
