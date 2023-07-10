@@ -19,11 +19,9 @@ public class GenericWarehouse<T> {
         this.products = products;
     }
 
-    public <U> void addBox(U box) {
-        Box<U> newBox = new Box<>();
+    public void addProduct(T product) {
         T[] newProducts = Arrays.copyOf(products, products.length + 1);
-        newProducts[products.length] = (T) newBox;
-
+        newProducts[products.length] = product;
         setProducts(newProducts);
     }
 }
