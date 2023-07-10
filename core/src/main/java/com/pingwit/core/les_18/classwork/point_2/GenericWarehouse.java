@@ -23,4 +23,12 @@ public class GenericWarehouse<T> {
         newProducts[products.length] = product;
         setProducts(newProducts);
     }
+//так делать не надо, это просто пример. Мы тут явно Box создаем, а у нас T!!!
+//    public <U> void addBox(U box) {
+//        Box<U> newBox = new Box<>();
+//        T[] newProducts = Arrays.copyOf(products, products.length + 1);
+//        newProducts[products.length] = (T) newBox;
+//
+//        setProducts(newProducts);
+//    }
 }
