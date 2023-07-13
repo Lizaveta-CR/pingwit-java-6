@@ -1,0 +1,4 @@
+1. https://www.youtube.com/watch?v=K1iu1kXkVoA
+2. https://www.youtube.com/watch?v=5dscMs2hnDI
+3. https://www.w3schools.com/java/java_arraylist.asp
+4. https://www.w3schools.com/java/java_linkedlist.asp
