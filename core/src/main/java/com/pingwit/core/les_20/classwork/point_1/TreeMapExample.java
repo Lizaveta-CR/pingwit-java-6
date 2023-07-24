@@ -13,7 +13,7 @@ public class TreeMapExample {
         treeMap.put(5, "B");
         treeMap.put(4, "B");
         treeMap.put(10, null);
-        treeMap.put(null, null);
+//        treeMap.put(null, null);
         System.out.println(treeMap);
     }
 }
