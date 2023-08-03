@@ -6,4 +6,6 @@ import java.util.Optional;
 public interface OrderService {
 
     Optional<Order> findById(List<Order> orders, int id);
+
+    Order findById2(List<Order> orders, int id);
 }
