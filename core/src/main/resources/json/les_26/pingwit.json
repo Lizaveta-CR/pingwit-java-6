@@ -1,0 +1,23 @@
+{
+  "name": "pingwit",
+  "courseLength": 6.5,
+  "students": [
+    {
+      "name": "Kate",
+      "age": 33
+    },
+    {
+      "name": "Jakub",
+      "age": 19
+    }
+  ],
+  "program": {
+    "name": "Java",
+    "lectures": [
+      "lec_1",
+      "lec_2",
+      "lec_3"
+    ]
+  },
+  "unknown": 33
+}
