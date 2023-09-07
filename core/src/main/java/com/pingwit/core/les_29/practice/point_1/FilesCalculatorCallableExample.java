@@ -18,6 +18,9 @@ public class FilesCalculatorCallableExample {
         System.out.println("After get()");
         System.out.println("result: " + intRes);
 
+        while (result.isDone()){
+            //code
+        }
         executorService.shutdown();
     }
 }
