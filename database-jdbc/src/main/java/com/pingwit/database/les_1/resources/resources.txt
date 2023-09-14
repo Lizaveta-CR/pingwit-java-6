@@ -1,0 +1,9 @@
+1. https://habr.com/ru/articles/555760/
+
+2. Только 3 НФ, дальше не надо - https://habr.com/ru/articles/254773/
+
+3. Типы данных https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
+
+4. https://stackoverflow.com/questions/54527999/why-we-need-a-primary-key
+
+5. https://www.w3schools.com/sql/
