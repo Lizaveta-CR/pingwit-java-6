@@ -1,0 +1,7 @@
+https://metanit.com/sql/postgresql/4.7.php
+
+https://metanit.com/sql/postgresql/6.5.php
+
+просто для общего развития - https://metanit.com/sql/postgresql/5.2.php
+
+https://www.baeldung.com/java-jdbc
