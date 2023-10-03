@@ -1,0 +1,13 @@
+ACID
+https://habr.com/ru/post/555920/
+
+Transactions
+https://habr.com/ru/post/469415/
+https://habr.com/ru/post/662407/
+
+
+Тут ключевое понять разницу между non-repeatable read and phantom read
+https://jennyttt.medium.com/dirty-read-non-repeatable-read-and-phantom-read-bd75dd69d03a
+
+non-repeatable - про update
+phantom - insert, delete

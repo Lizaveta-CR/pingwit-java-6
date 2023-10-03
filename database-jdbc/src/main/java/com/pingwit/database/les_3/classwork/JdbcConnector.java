@@ -15,7 +15,7 @@ public class JdbcConnector {
     private static final String USERNAME = "postgres";
     private static final String PASSWORD = "docker";
     private static final String SELECT_AUTO_HOUSE = "select * from auto_house";
-    private static final String INSERT = "INSERT INTO fuel(name) VALUES (?)";
+    private static final String INSERT = "INSERT INT fuel(name) VALUES (?)";
 
     public static void main(String[] args) {
         JdbcConnector jdbcConnector = new JdbcConnector();
@@ -47,13 +47,18 @@ public class JdbcConnector {
             cars.forEach(System.out::println);
 
             Statement update = connection.createStatement();
-            int counter = update.executeUpdate("DELETE from auto_house WHERE id = 9");
+            connection.setAutoCommit(false);
+            int counter = update.executeUpdate("DELETE from auto_house WHERE id = 7");
             System.out.println(counter);
 
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT);
             preparedStatement.setString(1, "nanana");
 
             preparedStatement.execute();
+            connection.commit();
+//          connection.rollback();
+            int transactionIsolation = connection.getTransactionIsolation(); //set
+            System.out.println(transactionIsolation);
 
             connection.close();
         } catch (ClassNotFoundException | SQLException e) {
