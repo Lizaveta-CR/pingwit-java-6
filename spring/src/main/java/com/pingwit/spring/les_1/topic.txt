@@ -1,0 +1,21 @@
+IoC - Inversion Of Control
+
+DI - Dependency Injection. Зависящие друг от друга классы
+
+Bean - бины - это объект, который является основой приложения и управляются Spring IOC
+
+- xml -- deprecated
+- java code
+- annotations
+
+--constructor-based injection
+--setter-based injection
+--field-based injection
+
+-Component scanning (@ComponentScan)
+
+@Component - кандитат на бин!
+@Service - класс является сервисом для выполнения бизнес-логики
+@Repository - является репозиторием для работы с БД
+
+-- Spring Boot
