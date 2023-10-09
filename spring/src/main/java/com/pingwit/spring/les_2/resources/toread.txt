@@ -1,0 +1,22 @@
+https://www.digitalocean.com/community/tutorials/dao-design-pattern
+
+
+HTTP:
+1. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+2. https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow (до APIBased)
+
+3. https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+--
+An idempotent HTTP method is a method that can be invoked many times without the different outcomes.
+It should not matter if the method has been called only once, or ten times over. The result should always be the same.
+--
+
+MVC:
+1. https://www.geeksforgeeks.org/mvc-design-pattern/
+
+REST:
+1. https://habr.com/ru/articles/483202/
+2. https://mcs.mail.ru/blog/vvedenie-v-rest-api
+3. https://stackoverflow.com/questions/4913343/what-is-the-difference-between-uri-url-and-urn#:~:text=URI%20(uniform%20resource%20identifier)%20identifies,given%20space%2C%20but%20no%20location

@@ -1,0 +1,16 @@
+•	GET /tickets: Retrieves the list of available tickets.
+•	POST /tickets: Creates a new ticket.
+•	DELETE /tickets/{ticketId}: Deletes a ticket.
+•	PUT /tickets/{ticketId}: Updates a ticket.
+•	GET /tickets/{ticketId}: Retrieves a particular ticket.
+    GET /users/1/tickets/3: Retrieves the list of tickets for user 1.
+
+    GET /products : Retrieves the list of available products.
+    GET /users/1/products : Retrieves the list of products for user 1.
+    POST /products : Creates a new product.
+    DELETE /products/{productId} : Deletes a product.
+    PUT /products/{productId} : Updates a product.
+    GET /products/{productId} : Retrieves a particular product.
+
+    GET /stores/{storeId}/products : Retrieves the list of products for store {storeId}.
+    GET /stores/{storeId}/products/{productId} : Retrieves a particular product for store {storeId}.

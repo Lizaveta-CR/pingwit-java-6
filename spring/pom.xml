@@ -10,6 +10,10 @@
 
     <groupId>com.pingwit.spring</groupId>
     <artifactId>spring</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-mvc</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

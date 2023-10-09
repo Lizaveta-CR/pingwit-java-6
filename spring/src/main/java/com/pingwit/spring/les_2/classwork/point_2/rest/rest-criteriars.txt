@@ -1,0 +1,6 @@
+1. Client-Server
+2. Stateless
+3. Cache
+4. Uniform Interface
+
+GET http://localhost:8080/tickets
