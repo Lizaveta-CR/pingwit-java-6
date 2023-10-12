@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-mvc</module>
+        <module>les3</module>
     </modules>
     <dependencies>
         <dependency>
@@ -20,11 +21,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.3.5</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <version>42.3.5</version>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>

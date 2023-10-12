@@ -1,0 +1,25 @@
+server:
+  port: 8443
+#  my.server.name=Application name with no profile from application.yml
+my:
+  server:
+    name: Application name with no profile from application.yml
+    nameV2: ${my.server.name}
+
+email:
+  from: "pingwitstudents@gmail.com"
+  signature: "\n\n Best Regards, Pingwit Students!"
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: pingwitstudents@gmail.com
+    password: pingwitpassword
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+
+# my.server.name=sjsjs
+# my.server.surname=sksks
+# my.server.surname.sursurname=sjsjsjs
+

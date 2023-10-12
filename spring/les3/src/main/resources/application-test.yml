@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+my:
+  server:
+    name: Application name with test profile from application.yml
