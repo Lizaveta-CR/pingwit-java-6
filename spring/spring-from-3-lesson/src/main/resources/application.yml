@@ -18,8 +18,18 @@ spring:
     password: pingwitpassword
     properties.mail.smtp.auth: true
     properties.mail.smtp.starttls.enable: true
-
-# my.server.name=sjsjs
-# my.server.surname=sksks
-# my.server.surname.sursurname=sjsjsjs
-
+  # my.server.name=sjsjs
+  # my.server.surname=sksks
+  # my.server.surname.sursurname=sjsjsjs
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pingwit
+    username: postgres
+    password: docker
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    show-sql: true
+#    generate-ddl: true
+#    hibernate:
+#     ddl-auto: create

@@ -1,0 +1,8 @@
+1. https://habr.com/ru/articles/130826/ - с ORM такого не будет, так как все
+SQL уже будут подготовлены и очищены
+
+2. https://www.baeldung.com/hibernate-identifiers
+(Стратегия TABLE работает так же как SEQUENCE, но нужно избегать ее любой ценой, потому что она использует отдельную транзакцию для генерирования идентификатора сущности)
+
+3. При желании можно узнать про кастомный маппинг enam-ов
+https://thorben-janssen.com/hibernate-enum-mappings/

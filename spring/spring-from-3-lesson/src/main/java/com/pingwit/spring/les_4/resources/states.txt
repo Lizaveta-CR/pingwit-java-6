@@ -1,0 +1,4 @@
+1. Transient
+2. Managed
+3. Detached
+4. Removed
