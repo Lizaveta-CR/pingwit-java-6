@@ -3,9 +3,10 @@ package com.pingwit.spring.les_4.point_2.service;
 import com.pingwit.spring.les_4.point_2.entity.Laptop;
 import com.pingwit.spring.les_4.point_2.entity.Processor;
 import com.pingwit.spring.les_4.point_2.repository.LaptopRepository;
-import java.util.List;
-import org.apache.commons.collections4.IterableUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class LaptopService {
@@ -14,15 +15,33 @@ public class LaptopService {
 
     public LaptopService(LaptopRepository laptopRepository) {this.laptopRepository = laptopRepository;}
 
-    public Laptop save(Laptop laptop) {
-        return laptopRepository.save(laptop);
+    @Transactional(rollbackFor = IllegalArgumentException.class)
+    public Laptop save(Laptop laptop) throws IllegalArgumentException {
+        Laptop save = laptopRepository.save(laptop);
+
+        exceptionGenerator();
+        return save;
     }
 
-    public List<Laptop> getAll() {
-        return IterableUtils.toList(laptopRepository.findAll());
+    //rollback will not be occurred
+    public Laptop doTransaction(Laptop laptop) throws IllegalArgumentException {
+//        code
+        return save(laptop);
     }
 
-    public List<Laptop> getAllByProcessor(Processor processor) {
-        return IterableUtils.toList(laptopRepository.findAllByProcessor(processor));
+    public Page<Laptop> getAll(Pageable pageable) {
+        //300 - total elements, 0 - page, 100 -size
+//        laptops.getContent() - 100
+//        laptops.getTotalElements() - 300
+//        laptops.getTotalPages() - 3
+        return laptopRepository.findAll(pageable);
+    }
+
+    public Page<Laptop> getAllByProcessor(Processor processor, Pageable pageable) {
+        return laptopRepository.findAllByProcessor(processor, pageable);
+    }
+
+    private void exceptionGenerator() throws IllegalArgumentException {
+        throw new IllegalArgumentException("My unknown message");
     }
 }

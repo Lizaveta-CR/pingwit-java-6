@@ -1,0 +1,2 @@
+1. https://www.baeldung.com/spring-data-jpa-pagination-sorting
+2. На xml не обращаем внимание, это старый способ конфигурации - https://habr.com/ru/articles/682362/
