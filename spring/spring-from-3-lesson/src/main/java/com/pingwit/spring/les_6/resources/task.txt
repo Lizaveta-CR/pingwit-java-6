@@ -1,0 +1,42 @@
+***Task 1***
+Дано:
+
+public class User {
+    private Long id;
+    private String login;
+    private Avatar avatar;
+    private List<Subscription> subscriptions;
+    private List<Comment> comments;
+}
+
+public class Subscription {
+    private long id;
+    private Type type;
+}
+
+public enum Type {
+    MONTH,
+    YEAR
+}
+
+public class Avatar {
+    private long id;
+    private String url;
+}
+
+public class Comment {
+    private long id;
+    private String text;
+}
+
+Описание:
+У одного пользователя может быть один аватар, а у одного аватара, один пользователь.
+У одного пользователя может быть несколько подписок, а одна подписка может принадлежать нескольким пользователям.
+У одного пользователя может быть несколько комментариев, а один комментарий может принадлежать только одному пользователю.
+
+Задание:
+- Вам необходимо настроить припомощи аннотаций связи между таблицами.
+- Подготовить json для сохранения пользователя (у пользователя должен быть аватар, несколько подписок и комментариев).
+- При помощи postman сохранить пользователя в базу данных.
+- При помощи postman получить всех пользователей включая данные об аватаре, подписках и комментариях и т.д.
+- При помощи postman получить одного пользователя по id.
