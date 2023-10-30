@@ -7,6 +7,6 @@ public record HouseRequestDto(
     Long id,
     HouseType houseType,
     Integer floor,
-    Long addressId,
+    AddressDto address,
     List<Long> elevators,
     List<Long> residents) {}

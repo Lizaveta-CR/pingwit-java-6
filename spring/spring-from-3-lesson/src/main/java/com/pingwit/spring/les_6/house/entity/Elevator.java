@@ -1,6 +1,8 @@
 package com.pingwit.spring.les_6.house.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -23,9 +25,18 @@ public class Elevator {
     private Long id;
     private String producer;
     private String serialNo;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "house_id")
     private House house;
+
+    @Override
+    public String toString() {
+        return "Elevator{" +
+            "id=" + id +
+            ", producer='" + producer + '\'' +
+            ", serialNo='" + serialNo + '\'' +
+            '}';
+    }
 }
 /*
 elevators(
