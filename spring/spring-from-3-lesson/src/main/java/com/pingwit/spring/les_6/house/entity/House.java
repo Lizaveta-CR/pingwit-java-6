@@ -38,7 +38,7 @@ public class House {
     private Address address;
     @OneToMany(mappedBy = "house", fetch = FetchType.LAZY)
     private List<Elevator> elevators = new ArrayList<>();
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
         name = "houses_residents",
         joinColumns = @JoinColumn(name = "house_id"),

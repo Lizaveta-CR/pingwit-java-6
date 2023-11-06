@@ -12,6 +12,9 @@ public class AddressConverter {
     }
 
     public Address toModel(AddressDto dto) {
-        return new Address(dto.id(), dto.city(), dto.street(), dto.number());
+        if (dto != null) {
+            return new Address(dto.id(), dto.city(), dto.street(), dto.number());
+        }
+        return new Address();
     }
 }

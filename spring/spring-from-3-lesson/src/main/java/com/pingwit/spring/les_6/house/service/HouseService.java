@@ -5,8 +5,10 @@ import static java.lang.String.format;
 import com.pingwit.spring.les_6.house.entity.House;
 import com.pingwit.spring.les_6.house.repository.HouseRepository;
 import com.pingwit.spring.les_6.house.repository.HouseResidentRepository;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -36,5 +38,18 @@ public class HouseService {
 
         beanUtilService.copyProperties(house, existing);
         return houseRepository.save(existing);
+    }
+
+    @Transactional
+    public void updateFloor(Long floor) {
+        houseRepository.updateFloor(floor);
+    }
+
+    public List<House> findHousesByResidentsNames(List<String> residents) {
+        return houseRepository.findHousesByResidentsNames(residents);
+    }
+
+    public List<House> findAllResidentsHouses(List<Long> residents) {
+        return houseRepository.findAllResidentsHouses(residents);
     }
 }

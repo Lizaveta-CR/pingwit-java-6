@@ -9,4 +9,4 @@ public record HouseRequestDto(
     Integer floor,
     AddressDto address,
     List<Long> elevators,
-    List<Long> residents) {}
+    List<ResidentDto> residents) {}

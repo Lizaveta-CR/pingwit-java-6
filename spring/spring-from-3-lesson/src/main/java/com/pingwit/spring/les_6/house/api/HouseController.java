@@ -6,6 +6,7 @@ import com.pingwit.spring.les_6.house.dto.HouseRequestDto;
 import com.pingwit.spring.les_6.house.dto.HouseResponseDto;
 import com.pingwit.spring.les_6.house.entity.House;
 import com.pingwit.spring.les_6.house.service.HouseService;
+import java.util.List;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -52,5 +54,13 @@ public class HouseController {
     public HouseResponseDto getById(@PathVariable Long id) {
         House house = houseService.findById(id);
         return houseResponseConverter.toDto(house);
+    }
+
+    @GetMapping("/search/residents")
+    public List<HouseResponseDto> findHousesByResidentsNames(@RequestParam List<Long> residents) {
+        List<House> houses = houseService.findAllResidentsHouses(residents);
+        return houses.stream()
+            .map(houseResponseConverter::toDto)
+            .toList();
     }
 }

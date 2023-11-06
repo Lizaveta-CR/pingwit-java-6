@@ -29,11 +29,13 @@ public class HouseConverter {
         house.setHouseType(dto.houseType());
         house.setFloor(dto.floor());
         house.setAddress(addressConverter.toModel(dto.address()));
-        house.setHouseResidents(houseResidentService.findAllById(dto.residents()));
-        List<Elevator> elevators = elevatorService.findAllById(dto.elevators());
-        elevators.forEach((elevator -> elevator.setHouse(house)));
-        house.setElevators(elevators);
-
+        house.setHouseResidents(dto.residents().stream().map(residentConverter::toModel).toList());
+        List<Long> elevatorsIds = dto.elevators();
+        if (elevatorsIds != null){
+            List<Elevator> elevators = elevatorService.findAllById(elevatorsIds);
+            elevators.forEach((elevator -> elevator.setHouse(house)));
+            house.setElevators(elevators);
+        }
         return house;
     }
 
