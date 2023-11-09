@@ -33,3 +33,6 @@ spring:
 #    generate-ddl: true
 #    hibernate:
 #     ddl-auto: create
+  liquibase:
+    change-log: "classpath:db/changelog/liquibase-changelog.xml"
+    enabled: true
