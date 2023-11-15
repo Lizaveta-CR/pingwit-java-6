@@ -59,3 +59,8 @@
                 referencedColumnNames="id"/>
     </changeSet>
 </databaseChangeLog>
+<!--create table author_book(
+    author_id bigint,
+)-->
+
+<!-- alter table add constraint FK_author_id foreign key (author_id) REFERENCES author (id)-->

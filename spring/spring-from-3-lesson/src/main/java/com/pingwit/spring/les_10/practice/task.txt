@@ -1,0 +1,5 @@
+***Task 1***
+Возьмите любое из своих домашних заданий из лекций по Spring и покройте его unit и интеграционными тестами
+
+
+!!! https://medium.com/@tasdikrahman/f-i-r-s-t-principles-of-testing-1a497acda8d6 or https://dzone.com/articles/writing-your-first-unit-tests
